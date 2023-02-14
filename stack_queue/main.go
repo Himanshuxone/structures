@@ -21,6 +21,14 @@ func main() {
 	fmt.Printf("Stacks => %+v\n", stacks)
 	stacks.Dequeue()
 	fmt.Printf("Stacks => %+v\n", stacks)
+	stacks.Dequeue()
+	fmt.Printf("Stacks => %+v\n", stacks)
+	stacks.Dequeue()
+	fmt.Printf("Stacks => %+v\n", stacks)
+	stacks.Dequeue()
+	fmt.Printf("Stacks => %+v\n", stacks)
+	stacks.Dequeue()
+	fmt.Printf("Stacks => %+v\n", stacks)
 }
 
 func (s *stack) Push(item int) {
@@ -47,7 +55,7 @@ func (s *stack) Dequeue() {
 		s.IsEmpty()
 	} else {
 		item := (*s)[0]
-		fmt.Println("Dequeue First Element", item)
+		fmt.Println("Dequeued Element", item)
 		*s = (*s)[1:len(*s)]
 	}
 }
